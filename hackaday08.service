@@ -1,0 +1,11 @@
+[Unit]
+Description=gunicorn3 for hackaday-09-mandelbrot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/hackaday/day09_mandelbrot
+ExecStart=/bin/gunicorn3 -e SCRIPT_NAME=/hackaday/mandelbrot --bind 0.0.0.0:8009 app:app
+
+[Install]
+WantedBy=multi-user.target

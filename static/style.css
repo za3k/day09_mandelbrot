@@ -1,0 +1,23 @@
+/* -- This specific Hack-A-Day project -- */
+
+
+/* -- All Hack-A-Day projects -- */
+.about {
+    white-space: pre-wrap;
+}
+.footer {
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.navbar-brand-link a {
+    color: #777;
+}
+.navbar-brand-link a:hover {
+    color: #000;
+    text-decoration: none;
+}
