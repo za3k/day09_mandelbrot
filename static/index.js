@@ -115,7 +115,7 @@ $(document).ready(() => {
     const defaultParams = {minX: -1.5, maxX: 0.5, minY: -1, maxY: 1, xSteps: canvas.width, ySteps: canvas.height, maxIter: 100}; 
     let params = {...defaultParams, ...urlDict()};
     draw(canvas, params);
-    $(canvas).on("click", () => {
+    $(canvas).on("click", (event) => {
         const click = getCursorPosition(canvas, event);
         params = zoom(params, click);
         history.pushState(params, "", "?"+jQuery.param(params));
